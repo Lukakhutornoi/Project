@@ -248,6 +248,12 @@ color: black;
 
 }
 
+p1{
+font-size: 1.3rem;
+color: black;
+
+}
+
 a {
   text-decoration: none;
 }
@@ -525,7 +531,7 @@ padding: 35px;
     width: 100px;
     background-color: blue;
 	animation-name: animation;
-	animation-duration: 3s;
+	animation-duration: 4s;
 	animation-timing-function: ease-in;
 	animation-iteration-count: infinite;
     left: 600px;
@@ -555,6 +561,20 @@ padding: 35px;
 		border-radius: 50%;
 	  }
 	}
+
+
+	.animation > p{
+		position: absolute;
+		top: 38px;
+		left: 30px;
+	  }
+
+
+	  .animation > p1{
+		position: absolute;
+		top: 38px;
+		left: 23px;
+	  }
 
 
 /*FONTS*/
@@ -618,8 +638,19 @@ padding: 35px;
 	  }
 	}
 
-  
+ 
+	.animation > p{
+		position: absolute;
+		top: 38px;
+		left: 30px;
+	  }
 
+
+	  .animation > p1{
+		position: absolute;
+		top: 38px;
+		left: 23px;
+	  }
 
 
 	.bgfoto{
@@ -807,20 +838,24 @@ padding: 35px;
 				margin: 50px;
 			}
 
-
+          
+			.fa-solid{
+				font-size: 70px;
+				position:relative;
+				top:-175px;
+				right:-280px;
 			
-			.homebutton1{
+			
+			  }
+          
+
+			  .fa-arrow-up{
+				font-size: 70px;
 				position: fixed;
-				top: 160px;
-				right: 20px;
-				width: 70px;
-				height: 30px;
-				font-size: 1.7rem;
-				border-radius: 30px;
-			}
-
+				top:250px;
+				right:15px;
+			  }
 			
-
 
 		}
 
