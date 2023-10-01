@@ -1,0 +1,77 @@
+{
+    "menu": [
+      {
+        "class": "dsp",
+        "image": {
+          "class": "bgfoto",
+          "src": "https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg",
+          "alt": ""
+        },
+        "text": {
+          "class": "text",
+          "name": "Double smash cheesburger",
+          "price": "8.50 / 7.00$",
+          "contains": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit odio rem minus non quaerat quidem mollitia?",
+          "order_link": {
+            "class": "order",
+            "link": "order.html",
+            "span": {
+              "class": "white",
+              "text": "ORDER"
+            }
+          }
+        }
+      },
+      {
+        "class": "dsp"
+      },
+      {
+        "class": "dsp",
+        "image": {
+          "class": "bgfoto",
+          "src": "https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg",
+          "alt": ""
+        },
+        "text": {
+          "class": "text",
+          "name": "Classic burger",
+          "price": "7.00$",
+          "contains": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur facilis eos similique corrupti. Adipisci, aspernatur. Dolore facere vero fugit?",
+          "order_link": {
+            "class": "order",
+            "link": "order.html",
+            "span": {
+              "class": "white",
+              "text": "ORDER"
+            }
+          }
+        }
+      },
+      {
+        "class": "dsp"
+      },
+      {
+        "class": "dsp",
+        "image": {
+          "class": "bgfoto",
+          "src": "https://www.foodandwine.com/thmb/pBTOWNMV6HiFgilJuzVNzJxMmZI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steak-burger-with-au-poivre-special-sauce-ft-RECIPE0219-fe75e1536dbb49d7b9bf7908049341e3.jpg",
+          "alt": ""
+        },
+        "text": {
+          "class": "text",
+          "name": "Burger with onion rings",
+          "price": "8.00$",
+          "contains": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit odio rem minus non quaerat quidem mollitia?",
+          "order_link": {
+            "class": "order",
+            "link": "order.html",
+            "span": {
+              "class": "white",
+              "text": "ORDER"
+            }
+          }
+        }
+      }
+    ]
+  }
+  
