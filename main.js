@@ -1,8 +1,11 @@
+
+
+
 'use strict'
 
 // slider
-// let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
-let burgersJson = fetch("http://localhost:5500/Beefburgers.json")
+let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
+// let burgersJson = fetch("http://localhost:5500/Beefburgers.json")
 
 burgersJson
 .then(response => response.json()).then(drawSlides)
@@ -30,10 +33,29 @@ function drawSlides(slides) {
     changeSlide();
 }
 
+next.addEventListener('click', function () {
+  index++;
+  changeSlide()
+});
+prev.addEventListener('click', function () {
+  index--;
+  changeSlide()
+});
+function changeSlide() {
+  slides = document.querySelectorAll(".slide"); // count slides
+  if(index < 0) {
+    index = slides.length -1;
+  }
+  if(index > slides.length -1) {
+    index= 0;
+  }
+  for(let i = 0;i < slides.length; i++) {
+    slides[i].classList.remove('active');
+  }
+  slides[index].classList.add('active');
 
-next.addEventListener('click', function()  {
-    slides[index].classList.add('active');
-})
+}
+
 //slider End
 
 
