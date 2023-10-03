@@ -4,23 +4,23 @@
 'use strict'
 
 // slider
-export let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
+ let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
 // let burgersJson = fetch("http://localhost:5500/Beefburgers.json")
 
-export default burgersJson
+  burgersJson
 .then(response => response.json()).then(drawSlides)
 .catch(console.log)
 
 
 //variables
-export  let slider = document.querySelector(".slider");
-export let next = document.querySelector("#next");
-export let prev = document.querySelector("#prev");
-export let slides = document.querySelectorAll(".slide");
-export const slideContainer = document.querySelector(".slides");
-export let index = 0;
+  let slider = document.querySelector(".slider");
+ let next = document.querySelector("#next");
+ let prev = document.querySelector("#prev");
+ let slides = document.querySelectorAll(".slide");
+ const slideContainer = document.querySelector(".slides");
+ let index = 0;
 
-export function drawSlides(slides) {
+ function drawSlides(slides) {
     slides.menu.forEach((slide, index) => {
 
       console.log(slide)
@@ -63,7 +63,7 @@ prev.addEventListener('click', function () {
   changeSlide()
 });
 
-export function changeSlide() {
+ function changeSlide() {
   slides = document.querySelectorAll(".slide"); // count slides
   if(index < 0) {
     index = slides.length -1;
@@ -96,9 +96,26 @@ function myFunction() {
     }
 }
 
-
-let email = document.getElementById('#email').value;
-let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-if (!emailRegex.test(email)) {
-  alert('Invalid email format.');
+function validate() {
+  let mail = document.getElementById("text").value;
+  let regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
+  
+  if(regx.text(mail)){
+    alert('You have provided a valid Email ID')
+    return true
+  }
+  else{
+    alert('Sorry incorrect Email ID!')
+    return false;
+    
+  }
 }
+
+
+
+
+// let email = document.getElementById('email').value;
+// let emailRegex = /^([a-zA-Z0-9\._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]){2,}$/;
+// if (!emailRegex.test(email)) {
+//   alert('Invalid email format.');
+// }
