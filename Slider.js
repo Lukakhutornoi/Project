@@ -95,3 +95,10 @@ function myFunction() {
       x.style.display = "block";
     }
 }
+
+
+let email = document.getElementById('#email').value;
+let emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+if (!emailRegex.test(email)) {
+  alert('Invalid email format.');
+}
