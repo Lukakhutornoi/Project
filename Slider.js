@@ -7,7 +7,7 @@
 export let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
 // let burgersJson = fetch("http://localhost:5500/Beefburgers.json")
 
-burgersJson
+export default burgersJson
 .then(response => response.json()).then(drawSlides)
 .catch(console.log)
 
