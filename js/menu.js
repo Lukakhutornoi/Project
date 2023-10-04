@@ -6,26 +6,21 @@ function getmenu() {
 }
 
 function drawmenu(menu) {
-  let slides = document.querySelector('.slides');
+  let menuHTML = document.querySelector('.list-of-items');
   menu.menu.forEach(item => {
     let slide = document.createElement('div');
-    slide.classList.add('slide');
+    slide.classList.add('menu-item');
     slide.innerHTML = `
-      <div class="dsp">
         <img class="bgfoto" src="${item.image_src}" alt="" />
-        <p class="text">
-          ${item.contains} <br>
-          price: ${item.price} <br>
-          Contains: Lorem ipsum...
-          <a href="order.html"> 
-            <span class="order">
-              <span class="white">ORDER</span> 
-            </span> 
-          </a>
-        </p>
-      </div>
+        <div class="menu-item-text">
+          <h3>${item.name}</h3>
+          <p>${item.description}</p>
+          <p class="sale">${item.sale}</p>
+          <p class="price">${item.price}</p>
+          <button class="add-to-cart">Add to cart</button>
+        </div>
     `;
-    slides.appendChild(slide);
+    menuHTML.appendChild(slide);
   });
 }
 

@@ -17,7 +17,18 @@ let index = 0;
 function drawSlides(slides) {
   slides.menu.forEach((slide, index) => {
     let html = `<div class="slide" id="slide${index+1}">
-      <img src="${slide.image_src}" alt="${slide.name}" />
+      <span 
+        style="
+        background-image:url('${slide.image_src}');
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        display:block;
+        width:100%;
+        height:100%;
+        "
+        >
+      </span>
     </div>`;
     slideContainer.insertAdjacentHTML("beforeEnd", html);
   });
