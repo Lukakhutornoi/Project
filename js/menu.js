@@ -1,7 +1,7 @@
 'use strict';
 
 function getmenu() {
-  return fetch('http://localhost:5500/Beefburgers.json')
+  return fetch('http://localhost:5500/js/Beefburgers.json')
     .then(response => response.json());
 }
 
