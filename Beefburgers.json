@@ -17,6 +17,12 @@
           "name": "Burger with onion rings",
           "price": "8.00$",
           "contains": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit odio rem minus non quaerat quidem mollitia?"
+      },
+      {
+          "image_src": "https://placehold.co/600x400",
+          "name": "Burger with onion rings",
+          "price": "8.00$",
+          "contains": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit odio rem minus non quaerat quidem mollitia?"
       }
   ]
 }
