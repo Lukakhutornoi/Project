@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js" defer></script> <script src="Slider.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div>
+                    <p class="restoname"> <span class="yellow"> LK Burger</span> </p>
+
+                    <img class="logo" src="https://img.freepik.com/premium-vector/burger-logo-template_476121-29.jpg"
+                        alt="">
+
+                </div>
+
+
+            </div>
+            <h1 class="restoname"> <span class="yellow">Cart</span></h1>
+
+            <a href="gallery.html" class="menu1">
+                <span>
+                    <p> <span class="yellow"> Sign in/Log in </span> </p>
+                </span>
+            </a>
+
+
+
+        </div>
+    </header>   
+    <br>
+    <div class="burger" onclick="myFunction()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+    <nav class="container">
+        <ul>
+            <li><a href="index.html" class="menu">
+                    <p>Food</p>
+                </a></li>
+            <li><a href="page.html" class="menu">
+                    <p>Drinks</p>
+                </a></li>
+            <li><a href="contact.html" class="menu">
+                    <p>Contact us</p>
+                </a></li>
+            
+        </ul>
+    </nav>
+    <br><br>
+
+
+    <!-- <div class="animation" ><p>Food</p></div> -->
+
+
+
+    <a class="" href="index.html">
+        <i class="fa-solid fa-arrow-up fa-lg" style="color: #000000;"></i>
+    </a>
+
+
+    <section class="container CART">
+        <h2 class="cart-title">CaRT</h2>
+        
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            <div class="cart-row">
+            <div class="cart-item cart-column">
+                    <img class="cart-item-image"
+                    src="https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg?quality=90&crop=7px,1865px,3278px,1410px&resize=556,505"
+                    alt="" width="100" height="100"/>
+                    <span class="cart-item-title">Double smash cheesburger</span>
+            </div>
+                <span class="cart-price cart-column">7.00$</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger">Remove</button>
+                </div>    
+            </div>
+            <div class="cart-row">
+                <div class="cart-item cart-column">
+                        <img class="cart-item-image"
+                        src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg"
+                        alt="" width="100" height="100"/>
+                        <span class="cart-item-title">Classic burger</span>
+                </div>
+                    <span class="cart-price cart-column">7.50$</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger">Remove</button>
+                    </div>    
+                </div>
+         </div>
+        
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0$</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button"><span class="black">PURCHASE </span></button>
+    
+    </section>
+</body>

@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -160,24 +160,148 @@ table {
 
 /* Default Elements */
 
+/* cart */
+.CART{
+	border-radius:10% ;
+	padding: 20px;
+	background-color: var(--white);
+}
+.cart-title{
+	color:var(--yellow);
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: var();
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #000000;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #000000;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+	background-color: var(--yellow);
+	padding: 10px;
+	border-radius: 20%;
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/* cart */
+
 
 /* slider */
 
+
+.Sbgfoto{
+	min-width: 900px;
+	max-width:900px;
+	max-height:550px;
+	border-radius: 10%;
+	
+}
+
 .slider {
 	background-color: white;
-    width: 1000px;
-    height: px;
+    width: 100%;
+	max-width: 900px;
     margin: 0 auto;
     position: relative;
     top: 100px;
     border-radius: 20px;
-    /* margin:200px; */
 }
 
   .buttons {
     position: absolute;
-    top: 100%;
-    transform: translateY(-50%);
+    top: 50%;
+    transform: translateY(250%);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -190,7 +314,8 @@ table {
     border-radius:100px;
     font-size: 2rem;
     color: #fff;
-    padding: 0.5rem 1rem; 
+	padding: 10px 20px;
+    /* padding: 0.5rem 1rem;  */
     transition: background-color 0.3s ease-in-out;
   }
 
@@ -198,7 +323,8 @@ table {
 	display: flex;
 	justify-content: space-between;
     width: 100%;
-    height: 400px;
+	max-width: 200px;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -223,7 +349,14 @@ table {
     margin: 10px;
   }
 
-
+.bgfoto{
+	position:relative;
+	left: 20px;
+	min-width: 500px;
+	min-height: 450px;
+	max-width:500px;
+	max-height:450px;
+}
 
 /* end of slider */
 
@@ -350,8 +483,22 @@ h1 {
    
 }
 
-.text{
+.text3{
+	border: 1px solid black;
+	border-radius: 30px;
+	background-color:var(--yellow);
+	text-align: center;
+	padding-top: 50px;
+	color: var(--black);
+	margin-left: 100px;
 	
+}
+
+.text2{
+	min-width:300px ;
+	position:absolute;
+	left: 430px;
+	top:150px;
 	border: 1px solid black;
 	border-radius: 30px;
 	background-color:var(--yellow);
@@ -395,7 +542,9 @@ h1 {
 	
 }
 
-
+.none{
+	display: none;
+}
 
 
 .number {
@@ -560,11 +709,12 @@ position: relative;
 }
 
 .order{
+display: inline-block;
 background-color:var(--black);
 border-radius: 40px;
 padding: 10px;
 transition: all .65s;
-background-color: var();
+background-color: var(--black);
 
 }
 
@@ -659,7 +809,7 @@ padding: 35px;
 		position: absolute;
 		top: 38px;
 		left: 23px;
-	  }
+	  } */
 
 
 /*FONTS*/
@@ -709,7 +859,7 @@ padding: 35px;
 
 	
 	
-	  .buttons {
+	  .butto {
 		position: absolute;
 		top: 100%;
 		transform: translateY(-50%);

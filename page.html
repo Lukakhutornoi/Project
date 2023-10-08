@@ -6,7 +6,7 @@
     <title>LKburger</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-<script type="module" src="main.js" defer></script>    
+<script type="module" src="cart.js" defer></script>    
     <meta property="og:url"                content="https://lukakhutornoi.github.io/Project/" />
     <meta property="og:type"               content="LKburger" />
     <meta property="og:title"              content="Delicious burgers" />
@@ -45,6 +45,8 @@
             <li><a href="index.html" class="menu"><p>Food</p></a></li>
             <li><a href="page.html" class="menu"><p>Drinks</p></a></li>
             <li><a href="contact.html" class="menu"><p>Contact us</p></a></li>
+            <li><a href="cart.html" class="menu"><p>Cart</p></a></li>
+
         </ul>
     </nav>
     
@@ -58,132 +60,103 @@
 
 
 
-
     <section id="burgers" class="container">
        
         <h1>Drinks</h1>
     </div>
     <br><br><br>
 
-    <div class="dsp">
-        <img
-            class="drfoto"
-            src="https://media.istockphoto.com/id/537059224/photo/plastic-bottle-of-coca.jpg?s=170667a&w=0&k=20&c=dpTPPwZFXKmQG1ob3QLUxsyoGYKMVZiflA6mfpx9Ifc="
-            alt=""
-        />
-
-        <p class="text1">
-            Cocacola_0.5L <br>
-         price: 2.00$ <br>
-         <br><br><br><br><br><br>
-         <a href="order.html"> 
-            <span class="order">
-            <span class="white">ORDER</span> 
-            </span> 
-        </a>  
-         
-
-    </div>
     <br><br><br><br><br>
 
 
-    <div class="dsp">
-        <img
-            class="drfoto"
-            src="https://jgah.jayagrocer.com/cdn/shop/products/092006-1-1_e9193d71-3026-47f0-8a18-1984f8a8f078.jpg?v=1673579309"
-            alt=""
-        />
+    <div class=" dsp shop-item">
 
-        <p class="text">
-            Cocacola zero(sugar free)_0.5L <br>
-         price: 2.00$ <br>
-          <br><br><br><br><br><br>
-         <a href="order.html"> 
-            <span class="order">
-            <span class="white">ORDER</span> 
-            </span> 
-        </a>  
-         
-
-    </div>
+       <img class="bgfoto"
+        src="https://media.istockphoto.com/id/537059224/photo/plastic-bottle-of-coca.jpg?s=170667a&w=0&k=20&c=dpTPPwZFXKmQG1ob3QLUxsyoGYKMVZiflA6mfpx9Ifc="
+        alt="" />
+    
+        <p class="text3">
+            <span class="shop-item-title">Coca cola</span> <br>
+            price: <span class="shop-item-price">2.00$</span><br>
+            contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+            odio rem minus non<br><br><br><br><br><br>
+           
+            <button class="btn btn-primary shop-item-button order">
+           <span class="white"> Add to cart </span>
+            </button>
+        </p>
+        </div>
     <br><br><br><br><br>
 
 
+    <div class=" dsp shop-item">
 
-    <div class="dsp">
-        <img
-            class="drfoto"
-            src="https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/821459-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjgzOTV8aW1hZ2UvanBlZ3xhRE15TDJnM015OHhORFE0TURVMk5qazBNemMzTkM4NE1qRTBOVGt0TURFdWFuQm5YekV5TURCWGVERXlNREJJfGJlMWRiMWVhODA5YjA2NzRmODU5NGJiNTE2ZTZjMWU2YTczMjNiNTEyOGQ0YWJmNzAwNWQwNzkyZTdiMjg3NTg"
-            alt=""
-        />
+        <img class="bgfoto"
+        src="https://www.luluhypermarket.com/cdn-cgi/image/f=auto/medias/821459-01.jpg-1200Wx1200H?context=bWFzdGVyfGltYWdlc3wxNjgzOTV8aW1hZ2UvanBlZ3xhRE15TDJnM015OHhORFE0TURVMk5qazBNemMzTkM4NE1qRTBOVGt0TURFdWFuQm5YekV5TURCWGVERXlNREJJfGJlMWRiMWVhODA5YjA2NzRmODU5NGJiNTE2ZTZjMWU2YTczMjNiNTEyOGQ0YWJmNzAwNWQwNzkyZTdiMjg3NTg"
 
-        <p class="text">
-           Fanta Strawberry flavor_0.5L <br>
-         price: 2.00$ <br>
-          <br><br><br><br><br><br>
-         <a href="order.html"> 
-            <span class="order">
-            <span class="white">ORDER</span> 
-            </span> 
-        </a>  
-         
-
-    </div>
+         alt="" />
+     
+         <p class="text3">
+             <span class="shop-item-title">fanta strawberry</span> <br>
+             price: <span class="shop-item-price">2.00$</span><br>
+             contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+             odio rem minus non<br><br><br><br><br><br>
+            
+             <button class="btn btn-primary shop-item-button order">
+            <span class="white"> Add to cart </span>
+             </button>
+         </p>
+         </div>
+    
     
 
-</div>
+<br><br><br><br><br>
+<div class=" dsp shop-item">
+
+    <img class="bgfoto"
+    src="https://addide.com/cdn/shop/products/fanta-orange-plastic-500ml_600x600_crop_center.jpg?v=1625571698"
+     alt="" />
+ 
+     <p class="text3">
+         <span class="shop-item-title">fanta orange</span> <br>
+         price: <span class="shop-item-price">2.00$</span><br>
+         contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+         odio rem minus non<br><br><br><br><br><br>
+        
+         <button class="btn btn-primary shop-item-button order">
+        <span class="white"> Add to cart </span>
+         </button>
+     </p>
+     </div>
+
+
+
+
 <br><br><br><br><br>
 
 
-<div class="dsp">
-    <img
-        class="drfoto"
-        src="https://addide.com/cdn/shop/products/fanta-orange-plastic-500ml_600x600_crop_center.jpg?v=1625571698"
-        alt=""
-    />
 
-    <p class="text">
-       Fanta orange flavor_0.5L <br>
-     price: 2.00$ <br>
-      <br><br><br><br><br><br>
-     <a href="order.html"> 
-        <span class="order">
-        <span class="white">ORDER</span> 
-        </span> 
-    </a>  
-     
+<div class=" dsp shop-item">
 
-</div>
-
-<br><br><br><br><br>
-
-<div class="dsp">
-    <img
-        class="drfoto"
-        src="https://images.europroduct.ge/prod/368d3be3eb/0a3117b6da0f40ac9caea7379258be45_5449000004864.jpg?w=580"
-        alt=""
-    />
-
-    <p class="text">
-       Sprite_0.5L <br>
-     price: 2.00$ <br>
-      <br><br><br><br><br><br>
-     <a href="order.html"> 
-        <span class="order">
-        <span class="white">ORDER</span> 
-        </span> 
-    </a>  
-     
-
-</div>
+    <img class="bgfoto"
+    src="https://images.europroduct.ge/prod/368d3be3eb/0a3117b6da0f40ac9caea7379258be45_5449000004864.jpg?w=580"
+     alt="" />
+ 
+     <p class="text3">
+         <span class="shop-item-title">sprite</span> <br>
+         price: <span class="shop-item-price">2.00$</span><br>
+         contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+         odio rem minus non<br><br><br><br><br><br>
+        
+         <button class="btn btn-primary shop-item-button order">
+        <span class="white"> Add to cart </span>
+         </button>
+     </p>
+     </div>
 
 
 
 
-
-
-
-</div>
 
 
 

@@ -10,8 +10,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
-    <script  src="Slider.js" type="module" defer></script>
-
+    <script src="cart.js" defer></script>  <script  src="Slider.js" defer></script>
+    
     <meta property="og:url" content="https://lukakhutornoi.github.io/Project/" />
     <meta property="og:type" content="LKburger" />
     <meta property="og:title" content="Delicious burgers" />
@@ -67,7 +67,9 @@
             <li><a href="contact.html" class="menu">
                     <p>Contact us</p>
                 </a></li>
-            
+                <li><a href="cart.html" class="menu">
+                    <p>Cart</p>
+                </a></li>
         </ul>
     </nav>
     <br><br>
@@ -81,7 +83,7 @@
         <i class="fa-solid fa-arrow-up fa-lg" style="color: #000000;"></i>
     </a>
 
-    <h1 class="satauri">Burgers</h1>
+    <h1 class="satauri">Our burgers</h1>
 <div class="container">
     <div class="slider">
 
@@ -102,122 +104,33 @@
    
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
 
 
     
-    <!-- <section id="burgers" class="container">
+    <section id="burgers" class="container">
 
         <h1>Beef burgers</h1>
+        <div class=" dsp shop-item">
 
-        <br><br><br>
-        <div class="dsp">
-
-            <img class="bgfoto"
+            <img class="bgfoto shop-item-image"
                 src="https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg?quality=90&crop=7px,1865px,3278px,1410px&resize=556,505"
                 alt="" />
-
-            <p class="text">
-                Double smash cheesburger <br>
-                price: <span class="linethru">8.50 </span>/ 7.00$ <br>
+        
+            <p class="text3">
+                <span class="shop-item-title black">Big double cheddar cheeseburger</span> <br>
+                price: <span class="shop-item-price">9.00$</span><br>
                 contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
                 odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a>
+               
+                <button class="btn btn-primary shop-item-button order">
+               <span class="white"> Add to cart </span>
+                </button>
             </p>
-
-        </div>
+            </div>
+        <br><br><br>
+        
 
 
         <br><br><br><br><br><br><br><br><br><br><br><br>
@@ -225,45 +138,43 @@
 
 
 
-        <div class="dsp">
+        <div class="dsp shop-item">
 
-            <img class="bgfoto"
-                src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg" alt="">
-
-            <p class="text">
-                Classic burger <br>
-                price:7.00$ <br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi pariatur facilis eos
-                similique corrupti. Adipisci, aspernatur. Dolore facere vero fugit? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a>
-                <p>
-
-
-
-        </div>
+            <img class="bgfoto shop-item-image "
+                src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg"
+                alt="" />
+        
+            <p class="text3">
+                <span class="shop-item-title">Classic burger</span> <br>
+                price: <span class="shop-item-price">7.50$</span><br>
+                contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+                odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
+               
+                <button class="btn btn-primary shop-item-button order">
+               <span class="white"> Add to cart </span>
+                </button>
+            </p>
+            </div>
         <br><br><br><br><br>
+        <div class="dsp shop-item">
 
-
-        <div class="dsp">
-            <img class="bgfoto"
+            <img class="bgfoto shop-item-image "
                 src="https://www.foodandwine.com/thmb/pBTOWNMV6HiFgilJuzVNzJxMmZI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/steak-burger-with-au-poivre-special-sauce-ft-RECIPE0219-fe75e1536dbb49d7b9bf7908049341e3.jpg"
                 alt="" />
-
-            <p class="text">
-                Burger with onion rings <br>
-                price: 8.00$ <br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+        
+            <p class="text3">
+                <span class="shop-item-title">Burger with onion rings</span> <br>
+                price: <span class="shop-item-price">8.40$</span><br>
+                contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
                 odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a> </p>
-        </div>
+               
+                <button class="btn btn-primary shop-item-button order">
+                <span class="white"> Add to cart </span> 
+                </button>
+            </p>
+            </div>
+
+       
 
         <br><br><br><br><br><br><br><br><br><br>
 
@@ -271,97 +182,149 @@
 
         <br><br><br><br><br><br><br><br>
 
-        <div class="dsp">
-            <img class="bgfoto"
-                src="https://www.greatbritishfoodawards.com/assets/images/recipes/chickenburger_DiscoBistro_120_%285%29.jpg"
-                alt="" />
+        <div class="dsp shop-item">
 
-            <p class="text">
-                crispy chiken cheeseburger<br>
-                price: 8.00$ <br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+            <img class="bgfoto shop-item-image "
+           
+            src=  "https://www.greatbritishfoodawards.com/assets/images/recipes/chickenburger_DiscoBistro_120_%285%29.jpg"
+            alt="" />
+        
+            <p class="text3">
+                <span class="shop-item-title">Crispy chiken cheeseburger</span> <br>
+                price: <span class="shop-item-price">8.00$</span><br>
+                contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
                 odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a> </p>
-        </div>
+               
+                <button class="btn btn-primary shop-item-button order">
+                <span class="white"> Add to cart </span> 
+                </button>
+            </p>
+            </div>
         <br><br><br><br><br>
+        <div class="dsp shop-item">
 
-        <div class="dsp">
-            <img class="bgfoto"
+            <img class="bgfoto shop-item-image "
                 src="https://img.freepik.com/premium-photo/big-double-cheddar-cheeseburger-with-chicken-cutlet_147620-1306.jpg"
                 alt="" />
-
-            <p class="text">
-                Double chiken burger<br>
-                price: .8.50$ <br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+        
+            <p class="text3">
+                <span class="shop-item-title">Double chiken burger</span> <br>
+                price: <span class="shop-item-price">8.00$</span><br>
+                contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
                 odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a> </p>
-        </div>
+               
+                <button class="btn btn-primary shop-item-button order">
+                <span class="white"> Add to cart </span> 
+                </button>
+            </p>
+            </div>
+        
         <br><br><br><br><br><br><br><br>
 
+        <div class="dsp shop-item">
 
-        <div class="dsp">
-            <img class="bgfoto"
-                src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2021/08/02/eb-mcdo-080221.jpg?VersionId=FZu5EJ4O5.3fLsMLzG2oBe0xG9JZwkQ1"
+            <img class="bgfoto shop-item-image "
+                src="https://static1.straitstimes.com.sg/s3fs-public/styles/large30x20/public/articles/2021/08/02/eb-mcdo-080221.jpg?VersionId=FZu5EJ4O5.3fLsMLzG2oBe0xG9JZwkQ"
                 alt="" />
-
-            <p class="text">
-                chiken burger with darck sauce<br>
-                price: 7.00$ <br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
+        
+            <p class="text3">
+                <span class="shop-item-title">Chiken burger with dark sauce</span> <br>
+                price: <span class="shop-item-price">8.00$</span><br>
+                contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa reprehenderit nisi, sit
                 odio rem minus non quaerat quidem mollitia? <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a> </p>
-        </div>
+               
+                <button class="btn btn-primary shop-item-button order">
+                <span class="white"> Add to cart </span> 
+                </button>
+            </p>
+            </div>
         <br><br><br><br><br><br><br><br>
 
         <h1>Fries</h1>
         <br><br><br><br><br>
 
 
-        <div class="dsp">
-            <img class="bgfoto" src="https://blog.kainexus.com/hubfs/French%20fries%202.jpeg" alt="" />
+        <div class="dsp shop-item">
 
-            <p class="text">
-                Fries<br>
-                price:3.50$<br>
-                Contains:Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><br><br><br><br><br>
-                <a href="order.html">
-                    <span class="order">
-                        <span class="white">ORDER</span>
-                    </span>
-                </a> </p>
+            <img class="bgfoto shop-item-image "
+                src=" https://blog.kainexus.com/hubfs/French%20fries%202.jpeg"
+                alt="" />
+        
+            <p class="text3">
+                <span class="shop-item-title">Fries</span> <br>
+                price: <span class="shop-item-price">4.00$</span><br>
+                contains:Lorem ipsum dolor sit amet <br><br><br><br><br><br>
+               
+                <button class="btn btn-primary shop-item-button order">
+                    <span class="white"> Add to cart </span> 
+                    </button>
+            </p>
+            </div>
+
+
+
+
+
+
+        
+
+
+
+    </section>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+<section class="container CART">
+    <h2 class="cart-title">CaRT</h2>
+    
+    <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+    </div>
+    <div class="cart-items">
+        <div class="cart-row">
+
         </div>
-
-
-
-
-
-
+        <div class="cart-row">
+        <div class="cart-item cart-column">
+                <img class="cart-item-image"
+                src="https://images.immediate.co.uk/production/volatile/sites/2/2015/04/2015-02-24-olive-test-d5b505c.jpg?quality=90&crop=7px,1865px,3278px,1410px&resize=556,505"
+                alt="" width="100" height="100"/>
+                <span class="cart-item-title">Double smash cheesburger</span>
         </div>
+            <span class="cart-price cart-column">7.00$</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger">Remove</button>
+            </div>    
+        </div>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                    <img class="cart-item-image"
+                    src="https://www.noracooks.com/wp-content/uploads/2023/04/veggie-burgers-1-2-500x500.jpg"
+                    alt="" width="100" height="100"/>
+                    <span class="cart-item-title">Classic burger</span>
+            </div>
+                <span class="cart-price cart-column">7.50$</span>
+                <div class="cart-quantity cart-column">
+                    <input class="cart-quantity-input" type="number" value="1">
+                    <button class="btn btn-danger">Remove</button>
+                </div>    
+            </div>
+     </div>
+    
+    <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">0$</span>
+    </div>
+    <button class="btn btn-primary btn-purchase" type="button"><span class="black">PURCHASE </span></button>
 
-
-
-    </section> -->
-
-
-
-
-
-
-
-
+</section>
 
 
 

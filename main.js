@@ -1,2 +1,2 @@
-import  burgersJson  from "/Slider";
-import {slider,next,prev,slides,slideContainer,index,drawSlides,changeSlide  } from ".Slider/";
+
+import { drawSlides, changeSlide } from '/slider.js';

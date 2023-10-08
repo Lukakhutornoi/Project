@@ -1,6 +1,7 @@
 
 
 
+
 'use strict'
 
 // slider
@@ -19,34 +20,41 @@
  let slides = document.querySelectorAll(".slide");
  const slideContainer = document.querySelector(".slides");
  let index = 0;
-
- function drawSlides(slides) {
-    slides.menu.forEach((slide, index) => {
-
-      console.log(slide)
-                                                                 //     let html2 = `<div class="slide" id="slide${index+1}">
-                                                                //     <img src="${slide.image_src}" alt="${slide.name}" />
-                                                               // </div>`
-
-
-      let html = `
-      <div class=" slide">
-
-      <img class="bgfoto"
+   /*<div class=" slide shop-item" id="slide${index+1}">
+                                                                          
+      <img class="bgfoto shop-item-image"
           src="${slide.image_src}" alt="${slide.name}" />
 
-      <p class="text">
-          ${slide.name} <br>
-          price: <span class="linethru">8.50 </span>/ 7.00$ <br>
+
+          
+      <p class="text ">
+          <span class="shop-item-details">
+          <span class="shop-item-title">${slide.name}</span> <br>
+          price:<span class="shop-item-price">${slide.price}</span>      <br>
           contains:${slide.contains} <br><br><br><br><br><br>
-          <a href="order.html">
-              <span class="order">
-                  <span class="white">ORDER</span>
-              </span>
-          </a>
+          <button class="btn btn-primary shop-item-button">
+          Add to cart
+          </button>
+          </span>
       </p>
 
-  </div>`
+  </div> */
+ function drawSlides(slides) {
+    slides.menu.forEach((slide, index) => {                                          
+      console.log(slide)
+                                                                //      let html2 = `<div class="slide" id="slide${index+1}">
+                                                                //      <img src="${slide.image_src}" alt="${slide.name}" />
+                                                                // </div>`
+      let html = `
+      <div class="dsp slide shop-item">
+
+    <img class="Sbgfoto"
+        src="${slide.image_src}"
+        alt="" />
+
+   
+    </>
+      `
       slideContainer.insertAdjacentHTML("beforeEnd",html)
     })
 
@@ -81,9 +89,20 @@ prev.addEventListener('click', function () {
 //slider End
 
 
+
+
 // getmenu()
 //   .then(data => drawmenu(data))
 //   .catch(error => console.error(error));
+
+
+//cart
+
+//cart
+
+
+
+
 
 
 
@@ -113,6 +132,7 @@ function validate() {
 
 
 
+// export{drawSlides,changeSlide}
 
 // let email = document.getElementById('email').value;
 // let emailRegex = /^([a-zA-Z0-9\._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]){2,}$/;
