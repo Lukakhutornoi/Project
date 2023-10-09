@@ -163,17 +163,17 @@ table {
 #status{
 	
 	display: inline-block;
-background-color:var(--black);
+background-color:var(--yellow);
 border-radius: 40px;
 padding: 10px;
 transition: all .65s;
-background-color: var(--black);
+
 }
 /* Default Elements */
 
 /* cart */
 .CART{
-	border-radius:10% ;
+	border-radius:5% ;
 	padding: 20px;
 	background-color: var(--white);
 }

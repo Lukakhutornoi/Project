@@ -27,10 +27,13 @@ function ready() {
         let button = addToCartButtons[i];
         button.addEventListener('click', addToCartClicked);
     }
+   
 
     // Load cart items from sessionStorage when the page loads
     loadCartItems();
 }
+
+
 
 function addToCartClicked(event) {
     let button = event.target;
@@ -56,8 +59,8 @@ function addItemToCart(title, price) {
     </div>`;
     cartRow.innerHTML = cartRowContents;
     cartItems.append(cartRow);
-
-    // Save the cart items to sessionStorage when a new item is added
+    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
+    cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('click',quantityChanged)
     saveCartItems();
 }
 
@@ -73,7 +76,6 @@ function removeCartItem(event) {
     let buttonClicked = event.target;
     buttonClicked.parentElement.parentElement.remove();
     updateCartTotal();
-    // Save the updated cart items to sessionStorage when an item is removed
     saveCartItems();
 }
 
@@ -87,7 +89,7 @@ function updateCartTotal() {
         let quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0];
         let price = parseFloat(priceElement.innerText.replace('$', ''));
         let quantity = quantityElement.value;
-        total += price * quantity;
+        total = total + (price * quantity);
     }
 
     total = Math.round(total * 100) / 100;
@@ -132,14 +134,14 @@ function loadCartItems() {
 loadCartItems();
 
 
-// export {
-//     ready,
-//     addToCartClicked,
-//     addItemToCart,
-//     quantityChanged,
-//     removeCartItem,
-//     updateCartTotal,
-//     saveCartItems,
-//     loadCartItems
-// };
+export {
+    ready,
+    addToCartClicked,
+    addItemToCart,
+    quantityChanged,
+    removeCartItem,
+    updateCartTotal,
+    saveCartItems,
+    loadCartItems
+};
 

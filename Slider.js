@@ -158,7 +158,7 @@ function validate() {
 
 
 
-// აქ გავაკეთე შეკვეთის პროცესის სიმულაცია
+// აქ გავაკეთე შეკვეთის პროცესის სიმულაცია სტატუსი complete ზე რომ გადავა კიდევ ტუ დააჭერთ გეტყვით რომ უკვე შესრულებულია შკვეთა
 
 
 let orderStatus = "pending";
@@ -176,7 +176,6 @@ document.getElementById("startOrder").addEventListener("click", () => {
     orderStatus = "in-progress";
     updateStatus("In Progress");
     
-    // Simulate order processing
     setTimeout(() => {
         if (orderStatus === "in-progress") {
             orderStatus = "complete";
@@ -187,8 +186,8 @@ document.getElementById("startOrder").addEventListener("click", () => {
 
 document.getElementById("cancelOrder").addEventListener("click", () => {
     if (orderStatus === "complete") {
-        alert("order canceld.stopping order processing");
-        return updateStatus("Canceled");
+        alert("order canceld.stopping order processing you can remove items from the cart or order again");
+        return;
     }
     
     orderStatus = "canceled";
@@ -196,10 +195,7 @@ document.getElementById("cancelOrder").addEventListener("click", () => {
 
     while (true) {
 
-      if (orderStatus === "canceled") {
-        alert("Order canceled. Stopping order processing.");
-        break;
-      }
+      
     
       if (orderStatus === "complete") {
         console.log("Order is complete. Ready for delivery.");
@@ -213,7 +209,10 @@ document.getElementById("cancelOrder").addEventListener("click", () => {
         orderStatus = "in-progress";
       } else if (orderStatus === "in-progress") {
         orderStatus = "complete";
+      } else if (orderStatus === 'canceled'){
+        orderStatus = 'canceld'
       }
+
     }
 });
 
