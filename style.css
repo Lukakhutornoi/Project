@@ -157,7 +157,18 @@ table {
 	justify-content: center;
 }
 
-
+#cancelOrder{
+	width: 150px;
+}
+#status{
+	
+	display: inline-block;
+background-color:var(--black);
+border-radius: 40px;
+padding: 10px;
+transition: all .65s;
+background-color: var(--black);
+}
 /* Default Elements */
 
 /* cart */
@@ -659,6 +670,10 @@ form a{
     margin-top: 50px;
 }
 
+.changecolor{
+	background-color: #CC4C4C;
+}
+
 .signin3{
 
 position: relative;
@@ -816,13 +831,13 @@ padding: 35px;
 
 @font-face {
 	font-family:font1 ;
-	src: url(fonts/Courgette-Regular.ttf);
+	src:url(fonts/Courgette-Regular.ttf);
 }
 
 
 @font-face {
 	font-family:font2;
-	src: url(fonts/Neuton-Regular.ttf);
+	src:url(fonts/Neuton-Regular.ttf);
 }
 
 

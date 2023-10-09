@@ -5,13 +5,30 @@
 'use strict'
 
 // slider
- let burgersJson = fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
-// let burgersJson = fetch("http://localhost:5500/Beefburgers.json")
 
-  burgersJson
-.then(response => response.json()).then(drawSlides)
-.catch(console.log)
+function fetchBurgersData() {
+  return new Promise((resolve, reject) => {
+    fetch("https://raw.githubusercontent.com/Lukakhutornoi/Project/main/Beefburgers.json")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        resolve(data);
+      })
+      .catch(error => {
+        reject(error);
+      });
+  });
+}
 
+fetchBurgersData()
+  .then(drawSlides)
+  .catch(error => {
+    console.error(error);
+  });
 
 //variables
   let slider = document.querySelector(".slider");
@@ -53,7 +70,7 @@
         alt="" />
 
    
-    </>
+    <div/>
       `
       slideContainer.insertAdjacentHTML("beforeEnd",html)
     })
@@ -106,20 +123,29 @@ prev.addEventListener('click', function () {
 
 
 
-function myFunction() {
-    var x = document.querySelector("nav")
-    if (x.style.display === "block") {
+//closures
+
+var myFunction = (function() {
+  var x = document.querySelector("nav");
+  var isNavVisible = false;
+
+  return function() {
+    if (isNavVisible) {
       x.style.display = "none";
     } else {
       x.style.display = "block";
     }
-}
+    isNavVisible = !isNavVisible;
+  };
+})();
+
+//closures
 
 function validate() {
   let mail = document.getElementById("text").value;
   let regx = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/
   
-  if(regx.text(mail)){
+   if(regx.test(mail)){
     alert('You have provided a valid Email ID')
     return true
   }
@@ -132,10 +158,82 @@ function validate() {
 
 
 
-// export{drawSlides,changeSlide}
+// აქ გავაკეთე შეკვეთის პროცესის სიმულაცია
 
-// let email = document.getElementById('email').value;
-// let emailRegex = /^([a-zA-Z0-9\._%-]+@[a-zA-Z0-9.-]+.[a-zA-Z]){2,}$/;
-// if (!emailRegex.test(email)) {
-//   alert('Invalid email format.');
-// }
+
+let orderStatus = "pending";
+
+function updateStatus(status) {
+    document.getElementById("status").textContent = `Order Status: ${status}`;
+}
+
+document.getElementById("startOrder").addEventListener("click", () => {
+    if (orderStatus === "complete") {
+        alert("Order is already complete!");
+        return;
+    }
+    
+    orderStatus = "in-progress";
+    updateStatus("In Progress");
+    
+    // Simulate order processing
+    setTimeout(() => {
+        if (orderStatus === "in-progress") {
+            orderStatus = "complete";
+            updateStatus("Complete");
+        }
+    }, 3000); 
+});
+
+document.getElementById("cancelOrder").addEventListener("click", () => {
+    if (orderStatus === "complete") {
+        alert("order canceld.stopping order processing");
+        return updateStatus("Canceled");
+    }
+    
+    orderStatus = "canceled";
+    updateStatus("Canceled");
+
+    while (true) {
+
+      if (orderStatus === "canceled") {
+        alert("Order canceled. Stopping order processing.");
+        break;
+      }
+    
+      if (orderStatus === "complete") {
+        console.log("Order is complete. Ready for delivery.");
+        break; 
+      }
+    
+    
+    
+      
+      if (orderStatus === "pending") {
+        orderStatus = "in-progress";
+      } else if (orderStatus === "in-progress") {
+        orderStatus = "complete";
+      }
+    }
+});
+
+
+
+
+
+// export {
+//   fetchBurgersData,
+//   drawSlides,
+//   slider,
+//   next,
+//   prev,
+//   slides,
+//   slideContainer,
+//   index,
+//   changeSlide,
+//   validate,
+
+// };
+ 
+
+
